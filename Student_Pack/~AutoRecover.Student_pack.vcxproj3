@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -143,7 +143,7 @@
   <ItemGroup>
     <ClInclude Include="BaseTest.h" />
     <ClInclude Include="BasicOp.h" />
-    <ClInclude Include="ErrorName.h" />
+    <ClInclude Include="ITest.h" />
     <ClInclude Include="OperationTest.h" />
     <ClInclude Include="RadixUtils.h" />
     <ClInclude Include="RunningTests.h" />

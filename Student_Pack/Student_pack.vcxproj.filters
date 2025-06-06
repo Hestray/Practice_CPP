@@ -13,10 +13,78 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Header Files\Calculator">
+      <UniqueIdentifier>{1cc89481-e941-4754-a733-450c537ac828}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Calculator">
+      <UniqueIdentifier>{309a1dd9-d53c-49be-8b7f-b58cfe145776}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Core">
+      <UniqueIdentifier>{c2d61953-b7e3-482a-ab6e-33321d26b0a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Calculator\Conversions">
+      <UniqueIdentifier>{bb3b4122-e859-4b2f-a6f0-71c51f02dd7b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Calculator\Operations">
+      <UniqueIdentifier>{f3bdc04e-e725-4801-b551-563f114be8ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Operations">
+      <UniqueIdentifier>{88711f0e-350e-49c8-80c0-af1ccd916853}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\UnitTests">
+      <UniqueIdentifier>{20b7c86c-e408-4f4b-ba32-816a62876bec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\UnitTests">
+      <UniqueIdentifier>{265a8dc3-f6f2-4633-89ed-c1f99fc4a7e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Core\TestCore">
+      <UniqueIdentifier>{b3aec773-8070-46f1-a576-a3e8a1865159}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Core">
+      <UniqueIdentifier>{c2e92cff-ee43-47d6-95a9-14e735597984}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Core\TestCore">
+      <UniqueIdentifier>{d0d62b73-d549-4b2a-ac95-a0dcee549d8e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="RadixUtils.cpp">
+      <Filter>Source Files\Calculator</Filter>
+    </ClCompile>
+    <ClCompile Include="BasicOp.cpp">
+      <Filter>Source Files\Operations</Filter>
+    </ClCompile>
+    <ClCompile Include="OperationTest.cpp">
+      <Filter>Source Files\UnitTests</Filter>
+    </ClCompile>
+    <ClCompile Include="RunningTests.cpp">
+      <Filter>Source Files\UnitTests</Filter>
+    </ClCompile>
+    <ClCompile Include="BaseTest.cpp">
+      <Filter>Source Files\Core\TestCore</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="RadixUtils.h">
+      <Filter>Header Files\Calculator\Conversions</Filter>
+    </ClInclude>
+    <ClInclude Include="BasicOp.h">
+      <Filter>Header Files\Calculator\Operations</Filter>
+    </ClInclude>
+    <ClInclude Include="OperationTest.h">
+      <Filter>Header Files\UnitTests</Filter>
+    </ClInclude>
+    <ClInclude Include="RunningTests.h">
+      <Filter>Header Files\UnitTests</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseTest.h">
+      <Filter>Header Files\Core\TestCore</Filter>
+    </ClInclude>
+    <ClInclude Include="ErrorName.h">
+      <Filter>Header Files\Core\TestCore</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -133,20 +133,16 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="BaseTest.cpp" />
     <ClCompile Include="BasicOp.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="OperationTest.cpp" />
     <ClCompile Include="RadixUtils.cpp" />
-    <ClCompile Include="RunningTests.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="BaseTest.h" />
     <ClInclude Include="BasicOp.h" />
-    <ClInclude Include="ErrorName.h" />
+    <ClInclude Include="ITest.h" />
     <ClInclude Include="OperationTest.h" />
     <ClInclude Include="RadixUtils.h" />
-    <ClInclude Include="RunningTests.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
