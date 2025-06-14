@@ -135,18 +135,24 @@
   <ItemGroup>
     <ClCompile Include="BaseTest.cpp" />
     <ClCompile Include="BasicOp.cpp" />
+    <ClCompile Include="FormattingTest.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="NumericUtils.cpp" />
     <ClCompile Include="OperationTest.cpp" />
     <ClCompile Include="RadixUtils.cpp" />
     <ClCompile Include="RunningTests.cpp" />
+    <ClCompile Include="ValueSanitizer.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BaseTest.h" />
     <ClInclude Include="BasicOp.h" />
     <ClInclude Include="ErrorName.h" />
+    <ClInclude Include="FormattingTest.h" />
+    <ClInclude Include="NumericUtils.h" />
     <ClInclude Include="OperationTest.h" />
     <ClInclude Include="RadixUtils.h" />
     <ClInclude Include="RunningTests.h" />
+    <ClInclude Include="ValueSanitizer.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -1,4 +1,3 @@
-#include "RadixUtils.h"
 #include "RunningTests.h"
 // in case the above doesn't work, use C++23 preview
 //import std;
@@ -10,6 +9,7 @@ void print(auto num, std::string additionalMessage = "") {
 int main() {
 	std::cout << "Hello world" << std::endl;
 	RunningTests::Operations();
+	RunningTests::Formattings();
 
 	return 0;
 }

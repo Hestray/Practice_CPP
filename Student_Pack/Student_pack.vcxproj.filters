@@ -28,9 +28,6 @@
     <Filter Include="Header Files\Calculator\Operations">
       <UniqueIdentifier>{f3bdc04e-e725-4801-b551-563f114be8ef}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\Operations">
-      <UniqueIdentifier>{88711f0e-350e-49c8-80c0-af1ccd916853}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Source Files\UnitTests">
       <UniqueIdentifier>{20b7c86c-e408-4f4b-ba32-816a62876bec}</UniqueIdentifier>
     </Filter>
@@ -46,25 +43,52 @@
     <Filter Include="Source Files\Core\TestCore">
       <UniqueIdentifier>{d0d62b73-d549-4b2a-ac95-a0dcee549d8e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Calculator\Formattings">
+      <UniqueIdentifier>{e5b305d1-aa05-41cc-8e3f-13c3a79274ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Calculator\Operations">
+      <UniqueIdentifier>{88711f0e-350e-49c8-80c0-af1ccd916853}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Calculator\Conversions">
+      <UniqueIdentifier>{76909ecc-f961-4c12-a15e-0279a9b56d91}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Calculator\Formattings">
+      <UniqueIdentifier>{b64ba37e-5d77-485b-8a1a-2f18bf8bb66a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\UnitTests\Calculator">
+      <UniqueIdentifier>{8e0434be-43c9-4ac7-8c39-00617ea7304c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\UnitTests\Calculator">
+      <UniqueIdentifier>{2f180126-93e5-4550-a371-a3aaadf033bb}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="RadixUtils.cpp">
-      <Filter>Source Files\Calculator</Filter>
-    </ClCompile>
     <ClCompile Include="BasicOp.cpp">
-      <Filter>Source Files\Operations</Filter>
-    </ClCompile>
-    <ClCompile Include="OperationTest.cpp">
-      <Filter>Source Files\UnitTests</Filter>
+      <Filter>Source Files\Calculator\Operations</Filter>
     </ClCompile>
     <ClCompile Include="RunningTests.cpp">
       <Filter>Source Files\UnitTests</Filter>
     </ClCompile>
     <ClCompile Include="BaseTest.cpp">
       <Filter>Source Files\Core\TestCore</Filter>
+    </ClCompile>
+    <ClCompile Include="RadixUtils.cpp">
+      <Filter>Source Files\Calculator\Conversions</Filter>
+    </ClCompile>
+    <ClCompile Include="NumericUtils.cpp">
+      <Filter>Source Files\Calculator\Formattings</Filter>
+    </ClCompile>
+    <ClCompile Include="ValueSanitizer.cpp">
+      <Filter>Source Files\Calculator\Formattings</Filter>
+    </ClCompile>
+    <ClCompile Include="OperationTest.cpp">
+      <Filter>Source Files\UnitTests\Calculator</Filter>
+    </ClCompile>
+    <ClCompile Include="FormattingTest.cpp">
+      <Filter>Source Files\UnitTests\Calculator</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -74,9 +98,6 @@
     <ClInclude Include="BasicOp.h">
       <Filter>Header Files\Calculator\Operations</Filter>
     </ClInclude>
-    <ClInclude Include="OperationTest.h">
-      <Filter>Header Files\UnitTests</Filter>
-    </ClInclude>
     <ClInclude Include="RunningTests.h">
       <Filter>Header Files\UnitTests</Filter>
     </ClInclude>
@@ -85,6 +106,18 @@
     </ClInclude>
     <ClInclude Include="ErrorName.h">
       <Filter>Header Files\Core\TestCore</Filter>
+    </ClInclude>
+    <ClInclude Include="NumericUtils.h">
+      <Filter>Header Files\Calculator\Formattings</Filter>
+    </ClInclude>
+    <ClInclude Include="ValueSanitizer.h">
+      <Filter>Header Files\Calculator\Formattings</Filter>
+    </ClInclude>
+    <ClInclude Include="OperationTest.h">
+      <Filter>Header Files\UnitTests\Calculator</Filter>
+    </ClInclude>
+    <ClInclude Include="FormattingTest.h">
+      <Filter>Header Files\UnitTests\Calculator</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

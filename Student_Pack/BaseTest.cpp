@@ -20,7 +20,7 @@ bool BaseTest::ASSERT_EQUAL(std::string testName, int actual, int expected) {
 }
 
 bool BaseTest::ASSERT_EQUAL(std::string testName, float actual, float expected, int digits) {
-	if (BasicOp::trim(actual, digits) == BasicOp::trim(expected, digits)) {
+	if (NumericUtils::trim(actual, digits) == NumericUtils::trim(expected, digits)) {
 		return true;
 	}
 	else {
@@ -35,7 +35,7 @@ bool BaseTest::ASSERT_EQUAL(std::string testName, float actual, float expected, 
 }
 
 bool BaseTest::ASSERT_EQUAL(std::string testName, double actual, double expected, int digits) {
-	if (BasicOp::trim(actual, digits) == BasicOp::trim(expected, digits)) {
+	if (NumericUtils::trim(actual, digits) == NumericUtils::trim(expected, digits)) {
 		return true;
 	}
 	else {

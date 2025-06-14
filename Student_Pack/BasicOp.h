@@ -3,25 +3,16 @@
 #include <iostream>
 #include <string>
 
-/// version: 1.1.0
+/// version: 1.1.1
 /// date: 14-06-2025
 
 class BasicOp
 {
 public:
-	/// <summary>
-	/// Computes the sum of the given numbers
-	/// </summary>
 	static int sum(std::vector<int> numbers);
 
-	/// <summary>
-	/// Computes the sum of the given numbers
-	/// </summary>
 	static float sum(std::vector<float> numbers);
 
-	/// <summary>
-	/// Computes the sum of the given numbers
-	/// </summary>
 	static double sum(std::vector<double> numbers);
 
 
@@ -32,9 +23,12 @@ public:
 	static int pow(int number, int exponent);
 
 
-	static std::string trim(double number, int digits);
+	static int mul(std::vector<int> numbers);
 
-	static std::string trim(float number, int digits);
+	static float mul(std::vector<float> numbers);
+
+	static double mul(std::vector<double> numbers);
+
 
 	///// <summary>
 	///// Fast version of pow for floats. Uses binary exponentiation.
