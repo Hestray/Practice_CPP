@@ -34,6 +34,7 @@ public:
 	//virtual bool ASSERT_EQUAL(std::string testName, unsigned long actual, unsigned long expected);
 	//virtual bool ASSERT_EQUAL(std::string testName, unsigned long long actual, unsigned long long expected);
 	virtual bool ASSERT_EQUAL(std::string testName, std::string actual, std::string expected);
+	virtual bool ASSERT_EQUAL(std::string testName, std::vector<std::string> actual, std::vector<std::string> expected);
 	virtual bool ASSERT_EQUAL(std::string testName, char actual, char expected);
 	virtual bool ASSERT_TRUE(std::string testName, bool expected);
 	virtual bool ASSERT_FALSE(std::string testName, bool expected);

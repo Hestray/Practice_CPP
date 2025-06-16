@@ -37,6 +37,7 @@ std::string NumericUtils::trim(double number, int digits) {
 	return roundStr;
 }
 
+
 std::string NumericUtils::trim(float number, int digits) {
 	if (digits >= 8) {
 		std::cout << "Double values will be rounded to maximum 7 digits." << std::endl;
@@ -72,4 +73,42 @@ std::string NumericUtils::trim(float number, int digits) {
 	}
 
 	return roundStr;
+}
+
+
+std::vector<std::string> NumericUtils::parts(std::string number) {
+	if (!ValueSanitizer::isNumber(number)) return { "NOT A NUMBER" };
+	
+	// following is for float/double
+	std::vector<std::string> result = { "", "" }; // structure: { WHOLE, FRACTIONAL }
+	int ok = false;
+	if (number[0] == '-') {
+		result[1].push_back('-');
+	}
+	result[1].push_back('0');
+
+	for (int i = 0; i < number.size(); i++) {
+		if (ok) {								// modify fractional part
+			result[1].push_back(number[i]);
+		}
+		else {
+			if (number[i] == '.') {				// modify whole part
+				ok = true;
+				result[1].push_back(number[i]);
+			}
+			else {
+				result[0].push_back(number[i]);	// add . to fractional part
+			}
+		}
+	}
+
+	if (!ok) {
+		result[1].push_back('.');
+		result[1].push_back('0');
+	}
+	
+	if (result[1].back() == 'f')
+		result[1].pop_back();
+
+	return result;
 }

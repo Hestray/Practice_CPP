@@ -71,6 +71,26 @@ bool BaseTest::ASSERT_EQUAL(std::string testName, std::string actual, std::strin
 	}
 }
 
+bool BaseTest::ASSERT_EQUAL(std::string testName, std::vector<std::string> actual, std::vector<std::string> expected) {
+	bool errorExist = 0;
+	if (actual.size() != expected.size()) {
+		errors.push_back("Test " + testName + " failed. Size of actual (" 
+			+ std::to_string(actual.size()) + ") and expected (" 
+			+ std::to_string(expected.size()) + ") incompatible.");
+		return false;
+	}
+
+	for (int i = 0; i < actual.size(); i++) {
+		if (actual[i] != expected[i]) {
+			errorExist = 1;
+			errors.push_back("Test " + testName + " failed. Expected " + expected[i] + ", but got " + actual[i] + " at index = " + std::to_string(i));
+		}
+	}
+	
+	if (errorExist) return false;
+	return true;
+}
+
 bool BaseTest::ASSERT_TRUE(std::string testName, bool expected) {
 	if (expected != true) {
 		errors.push_back("Test " + testName + " resulted in false. Expected true.");
@@ -82,5 +102,5 @@ bool BaseTest::ASSERT_FALSE(std::string testName, bool expected) {
 	if (expected != false) {
 		errors.push_back("Test " + testName + " resulted in true. Expected false.");
 	}
-	return expected;
+	return !expected;
 }
