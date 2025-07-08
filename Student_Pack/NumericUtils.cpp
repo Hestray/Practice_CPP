@@ -112,3 +112,16 @@ std::vector<std::string> NumericUtils::parts(std::string number) {
 
 	return result;
 }
+
+std::vector<int> NumericUtils::divs(int number) {
+	std::vector<int> res;
+	for (int i = 2; i < number / 2; i++)
+		if (number % i == 0) res.push_back(i);
+	return res;
+}
+
+int NumericUtils::gcd(int num1, int num2) {
+	int res = 1;
+	for (int i = 2; i < num1 / 2; i++)
+		if (num1 % i == 0 && num2 % i == 0) return res;
+}

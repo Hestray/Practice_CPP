@@ -2,6 +2,7 @@
 #include <vector>
 #include <iostream>
 #include <string>
+#include <math.h>
 #include "NumericUtils.h"
 
 ///
@@ -34,25 +35,13 @@ public:
 
 
 	/// <summary>
-	/// Fast version of pow for integers. Uses binary exponentiation.
+	/// Own implementation. Fast version of pow for integers. Uses binary exponentiation.
 	/// </summary>
 	static int pow(int number, int exponent);
-
-	static float pow(int number, float exponent);
-	static float pow(float number, int exponent);
-	static float pow(float number, float exponent);
-
+	static double pow(double number, double exponent);
 	
-	static float sqrt(int number, int order, int exp);
-
-	///// <summary>
-	///// Fast version of pow for floats. Uses binary exponentiation.
-	///// </summary>
-	//static float pow(float number, float exponent);
-
-
-
-
+	static double sqrt(double number);
+	static double nsqrt(double number, double order);
 
 };
 

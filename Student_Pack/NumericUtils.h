@@ -27,4 +27,20 @@ public:
 	/// <param name="number"></param>
 	/// <returns></returns>
 	static std::vector<std::string> parts(std::string number);
-};
+
+	/// <summary>
+	/// 
+	/// </summary>
+	/// <param name="number"></param>
+	/// <returns>all the divisors of a given integer</returns>
+	static std::vector<int> divs(int number);
+
+	/// <summary>
+	/// Greatest common divisor between two integers.
+	/// </summary>
+	/// <param name="number"></param>
+	/// <returns></returns>
+	static int gcd(int num1, int num2);
+
+	static int gcd(std::vector<int>)
+ };

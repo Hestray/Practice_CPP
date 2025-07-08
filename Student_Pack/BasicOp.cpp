@@ -125,21 +125,16 @@ int BasicOp::pow(int number, int power) {
 	return result;
 }
 
-//float BasicOp::pow(int number, float exponent) {
-//	// separate float exponent into whole and fractional part
-//	std::vector<std::string> parts = NumericUtils::parts(std::to_string(exponent));
-//	if (parts[0] == "NOT A NUMBER") {
-//		std::cout << "The exponent must be a number." << std::endl;
-//	}
-//
-//	int whole = std::stoi(parts[0]);
-//	float fractional = std::stof(parts[1]);
-//
-//	int intVal = BasicOp::pow(number, whole);
-//
-//	int order = 
-//	int exp = 
-//	float floatVal = BasicOp::sqrt(number, order, exp);
-//
-//	return (intVal + floatVal);
-//}
+double BasicOp::pow(double number, double exponent) {
+	return std::pow(number, exponent);
+}
+
+double BasicOp::sqrt(double number) {
+	return std::sqrt(number);
+}
+
+double BasicOp::nsqrt(double number, double order) {
+	double sum = std::log(number);
+	return exp(sum / order);
+}
+
