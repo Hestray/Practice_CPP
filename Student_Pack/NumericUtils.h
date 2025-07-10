@@ -42,5 +42,5 @@ public:
 	/// <returns></returns>
 	static int gcd(int num1, int num2);
 
-	static int gcd(std::vector<int>)
+	//static int gcd(std::vector<int>);
  };

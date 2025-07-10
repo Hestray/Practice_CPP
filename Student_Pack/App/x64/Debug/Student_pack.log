@@ -1,0 +1,23 @@
+﻿  Scanning sources for module dependencies...
+  std.compat.ixx
+  std.ixx
+  Compiling...
+  std.ixx
+  std.compat.ixx
+  BaseTest.cpp
+  BasicOp.cpp
+D:\Projects\Student App\Student_Pack\BasicOp.cpp(68,14): warning C4101: 'num2': unreferenced local variable
+D:\Projects\Student App\Student_Pack\BasicOp.cpp(88,16): warning C4101: 'num2': unreferenced local variable
+D:\Projects\Student App\Student_Pack\BasicOp.cpp(108,17): warning C4101: 'num2': unreferenced local variable
+  FormattingTest.cpp
+  main.cpp
+  NumericUtils.cpp
+  OperationTest.cpp
+  RadixUtils.cpp
+  RunningTests.cpp
+  ValueSanitizer.cpp
+  Generating Code...
+D:\Projects\Student App\Student_Pack\NumericUtils.cpp(127,1): warning C4715: 'NumericUtils::gcd': not all control paths return a value
+  Student_pack.vcxproj -> D:\Projects\Student App\Student_Pack\x64\Debug\App.exe
+  'pwsh.exe' is not recognized as an internal or external command,
+  operable program or batch file.
