@@ -36,7 +36,7 @@
 *.app
 
 # Visual Studio cache / options directory 
-/Student_Pack/.vs
-/Student_Pack/Student_pack/x64/Debug
-/Student_Pack/x64/Debug
-/Student_Pack/Debug
+/App/.vs
+/App/App/x64/Debug
+/App/x64/Debug
+/App/Debug
