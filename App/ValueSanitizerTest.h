@@ -1,16 +1,19 @@
 #pragma once
 #include "BaseTest.h"
-#include "NumericUtils.h"
 #include "ValueSanitizer.h"
 
 ///
 /// version 1.1.0
-/// date: 16.06.2025
+/// date: 23.07.2025
 /// 
 
-class FormattingTest : BaseTest {
+class ValueSanitizerTest : BaseTest {
 private:
-	bool numericUtilsTest();
+	ValueSanitizer valSan;
+
+private:
+	bool valueSanitizerTest();
+
 public:
 	void RUN_TEST() override;
 };

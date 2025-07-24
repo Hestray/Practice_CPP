@@ -11,3 +11,11 @@ void RunningTests::Formattings() {
 
 	formatTest.RUN_TEST();
 }
+
+void RunningTests::Sanitizers() {
+	ValueSanitizerTest	valSan;
+	TextUtilsTest		strUtil;
+
+	valSan.RUN_TEST();
+	strUtil.RUN_TEST();
+}

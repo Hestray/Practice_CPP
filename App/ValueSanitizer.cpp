@@ -1,6 +1,7 @@
 #include "ValueSanitizer.h"
 
 bool ValueSanitizer::isNumber(std::string number) {
+	// floating-point period
 	int point	= 0;
 	int i		= 0;
 

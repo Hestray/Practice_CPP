@@ -13,5 +13,6 @@ int main() {
 	
 	RunningTests::Operations();
 	RunningTests::Formattings();
+	RunningTests::Sanitizers();
 	return 0;
 }

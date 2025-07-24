@@ -1,6 +1,8 @@
 #pragma once
 #include "OperationTest.h"
 #include "FormattingTest.h"
+#include "ValueSanitizerTest.h"
+#include "StringUtilsTest.h"
 
 /// <summary>
 /// This class exists solely to not bloat main.cpp with all of the tests. 
@@ -20,4 +22,11 @@ public:
 	/// 1. Numeric formattings (trimming)
 	/// </summary>
 	static void Formattings();
+
+	/// <summary>
+	/// Tests the functionalities of any of the Sanitizers from UtilsCore. Includes:
+	/// 1. ValueSanitizer
+	/// 2. StringUtils
+	/// </summary>
+	static void Sanitizers();
 };

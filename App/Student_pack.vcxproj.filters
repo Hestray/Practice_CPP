@@ -79,6 +79,18 @@
     <Filter Include="Source Files\Core\UtilsCore">
       <UniqueIdentifier>{3e8b9642-6e86-4b6d-a25e-0a3d3eed6bef}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\UnitTests\ManagementSystem">
+      <UniqueIdentifier>{d4a88f74-cad3-433e-985f-789a307b8d1f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\UnitTests\ManagementSystem">
+      <UniqueIdentifier>{b607d467-47bf-47c5-9782-77e201cd3141}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\UnitTests\Core">
+      <UniqueIdentifier>{9767bd98-0154-4e80-81b9-50749c9a6609}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\UnitTests\Core">
+      <UniqueIdentifier>{e28dcd77-171f-4c19-af46-cfdd9f263bf9}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -117,6 +129,12 @@
     <ClCompile Include="TextUtils.cpp">
       <Filter>Source Files\Core\UtilsCore</Filter>
     </ClCompile>
+    <ClCompile Include="ValueSanitizerTest.cpp">
+      <Filter>Source Files\UnitTests\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="StringUtilsTest.cpp">
+      <Filter>Source Files\UnitTests\Core</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="RadixUtils.h">
@@ -154,6 +172,12 @@
     </ClInclude>
     <ClInclude Include="ValueSanitizer.h">
       <Filter>Header Files\Core\UtilsCore</Filter>
+    </ClInclude>
+    <ClInclude Include="ValueSanitizerTest.h">
+      <Filter>Header Files\UnitTests\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="StringUtilsTest.h">
+      <Filter>Header Files\UnitTests\Core</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
